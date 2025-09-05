@@ -1,0 +1,16 @@
+div {
+    width: 200px;
+    height: 200px;
+    background: green;
+    border: 2px solid black;
+    margin: 0 0 20px 0;
+    display: inline-block;
+}
+
+@media screen and (max-width: 770px) {
+    div {
+        display: block;
+        background: orange;
+        width: 4in;
+    }
+}
