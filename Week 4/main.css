@@ -1,0 +1,17 @@
+div {
+    width: 100px;
+    height: 100px;
+    background: orange;
+}
+
+/* div:not(:first-child) {
+    margin-top: 10px;
+} */
+
+div ~ div {
+    margin-top: 10px;
+}
+
+div:nth-child(n + 3) {
+    background: green;
+}
