@@ -1,0 +1,42 @@
+@keyframes strange {
+    25% {
+        border: 1px solid green;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    50% {
+        background: lightgreen;
+        width: 75px;
+        height: 75px;
+        transform: rotate(90deg);
+    }
+    75% {
+        transform: skew(25px, 200px);
+        border: 5px dashed rgb(196, 253, 81);
+    }
+    100% {
+        transform: translate(300px, 500px);
+        margin-left: 200px;
+    }
+}
+
+.box, .box2 {
+    width: 100px;
+    height: 100px;
+    background: rgb(181, 108, 108);
+    border: 3px dashed black;
+    border-radius: 5px;
+}
+
+/* .box:hover {
+    animation: strange 7s linear;
+} */
+
+.box2 {
+    transition: 10s linear;
+}
+
+.box2:hover {
+    transform: rotate(3600deg);
+}
+
