@@ -1,0 +1,42 @@
+:root {
+    --rounded-radius: 10px; 
+    --light-blue: rgb(183, 207, 230);
+    --light-green: rgb(174, 227, 172);
+    --light-purple: rgb(143, 110, 132);
+}
+
+html, body, p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: clamp(50px, 7vw, 100px);
+    /* margin: 0;
+    padding: 0; */
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    padding-top: env(safe-area-inset-top);
+}
+
+header, main, footer {
+    border-radius: var(--rounded-radius, 50px);
+    /* border-radius: max(5vw, 55px, 10%); */
+    height: calc((1 / 3) * 100vh - 10px);
+}
+
+header {
+    width: 100%;
+    background: var(--light-blue);
+}
+
+main {
+    width: 100%;
+    background: var(--light-green);
+}
+
+footer {
+    width: 100%;
+    background: var(--light-purple);
+}
