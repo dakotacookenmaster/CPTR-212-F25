@@ -1,0 +1,13 @@
+{
+    "name": "Joseph",
+    "age": 24,
+    "major": "Web Design & New Media",
+    "address": {
+        "line1": "123 Main Street",
+        "line2": "Apt 105",
+        "city": "Ooltewah",
+        "state": "TN",
+        "zip": 37363,
+        "county": "Hamilton"
+    }
+}
